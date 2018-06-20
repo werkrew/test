@@ -5,7 +5,7 @@ metadata:
 spec:
   platforms:
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: ca27fa6ab80e44de249f5cdd0bba4c1d94a2cfecf3f86127c9d0d12648cacb02 
+    sha256: fc7a911ac6c360acfd317a5ed8d7c4fdb6f4566e4124807ad3f4724581ee9265
     files:
     - from: "/*"
     selector:
