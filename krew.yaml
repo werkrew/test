@@ -1,0 +1,16 @@
+apiVersion: plugin.krew.app/v1alpha1
+kind: Plugin
+metadata:
+  name: krew
+spec:
+  platforms:
+  - uri: https://storage.googleapis.com/krew-test/krew.zip
+    sha256: 81ccd4768338eb0eb9035186570cf42567e56e8b281b4f61c9619843b960998f 
+    files:
+    - from: "/*"
+    selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin]}
+  version: "v0.0.1"
+  intro: Install plugins
+
