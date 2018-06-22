@@ -5,7 +5,7 @@ metadata:
 spec:
   platforms:
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: 48d853fd7bbe8ea07b56a0ec4dfcbb355723f4ed1a2eeb31bb6b818810d84b6f
+    sha256: 038798a591e833ba41ff17f99dad95080910d6d3926ea6dadc0c316a0fc74353
     files:
     - from: "plugin.yaml"
     - from: "krew-darwin"
@@ -16,7 +16,7 @@ spec:
       matchExpressions:
       - {key: os, operator: In, values: [darwin]}
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: 48d853fd7bbe8ea07b56a0ec4dfcbb355723f4ed1a2eeb31bb6b818810d84b6f
+    sha256: 038798a591e833ba41ff17f99dad95080910d6d3926ea6dadc0c316a0fc74353
     files:
     - from: "plugin.yaml"
     - from: "krew-linux"
@@ -26,5 +26,16 @@ spec:
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [linux]}
+  - uri: https://storage.googleapis.com/krew-test/krew.zip
+    sha256: 038798a591e833ba41ff17f99dad95080910d6d3926ea6dadc0c316a0fc74353
+    files:
+    - from: "plugin.yaml"
+    - from: "krew-windows"
+      to: "krew"
+    - from: "/commands/*"
+      to: "commands"
+    selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [windows]}
   version: "v0.0.1"
   intro: Install plugins
