@@ -4,35 +4,35 @@ metadata:
   name: krew
 spec:
   platforms:
-  - uri: https://storage.googleapis.com/krew-test/krew-5162e3dd7f845a39cda90ddc3b5226db3e66ca6682d25360fd7a6e73c6c6232b.zip
-    sha256: 5162e3dd7f845a39cda90ddc3b5226db3e66ca6682d25360fd7a6e73c6c6232b
+  - uri: https://storage.googleapis.com/krew-test/krew-27f9be9909de275a83a80e7e39697912b88a10c3014428801aca804323946ad8.zip
+    sha256: 27f9be9909de275a83a80e7e39697912b88a10c3014428801aca804323946ad8
     files:
     - from: "plugin.yaml"
     - from: "krew-darwin"
       to: "krew"
-    - from: "/commands/*"
+    - from: "unix/commands/*"
       to: "commands"
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [darwin]}
-  - uri: https://storage.googleapis.com/krew-test/krew-5162e3dd7f845a39cda90ddc3b5226db3e66ca6682d25360fd7a6e73c6c6232b.zip
-    sha256: 5162e3dd7f845a39cda90ddc3b5226db3e66ca6682d25360fd7a6e73c6c6232b
+  - uri: https://storage.googleapis.com/krew-test/krew-27f9be9909de275a83a80e7e39697912b88a10c3014428801aca804323946ad8.zip
+    sha256: 27f9be9909de275a83a80e7e39697912b88a10c3014428801aca804323946ad8
     files:
     - from: "plugin.yaml"
     - from: "krew-linux"
       to: "krew"
-    - from: "/commands/*"
+    - from: "unix/commands/*"
       to: "commands"
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [linux]}
-  - uri: https://storage.googleapis.com/krew-test/krew-5162e3dd7f845a39cda90ddc3b5226db3e66ca6682d25360fd7a6e73c6c6232b.zip
-    sha256: 5162e3dd7f845a39cda90ddc3b5226db3e66ca6682d25360fd7a6e73c6c6232b
+  - uri: https://storage.googleapis.com/krew-test/krew-27f9be9909de275a83a80e7e39697912b88a10c3014428801aca804323946ad8.zip
+    sha256: 27f9be9909de275a83a80e7e39697912b88a10c3014428801aca804323946ad8
     files:
     - from: "plugin.yaml"
-    - from: "krew-windows"
-      to: "krew"
-    - from: "/commands/*"
+    - from: "krew-windows.exe"
+      to: "krew.exe"
+    - from: "windows/commands/*"
       to: "commands"
     selector:
       matchExpressions:
