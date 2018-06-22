@@ -5,7 +5,7 @@ metadata:
 spec:
   platforms:
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: c3f9a107daf96ad7b8902e71f9d2d2b4ec770a2feb59ea5531be16555791a195
+    sha256: aca61bfe2fd2c188e71331f5929606572ab28037b1669b7141ef94e55400d9f7
     files:
     - from: "/commands/*"
       to: "commands"
@@ -16,7 +16,7 @@ spec:
       matchExpressions:
       - {key: os, operator: In, values: [darwin]}
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: c3f9a107daf96ad7b8902e71f9d2d2b4ec770a2feb59ea5531be16555791a195
+    sha256: aca61bfe2fd2c188e71331f5929606572ab28037b1669b7141ef94e55400d9f7
     files:
     - from: "/commands/*"
       to: "commands"
