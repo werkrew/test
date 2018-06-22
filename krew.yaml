@@ -5,24 +5,24 @@ metadata:
 spec:
   platforms:
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: aca61bfe2fd2c188e71331f5929606572ab28037b1669b7141ef94e55400d9f7
+    sha256: 48d853fd7bbe8ea07b56a0ec4dfcbb355723f4ed1a2eeb31bb6b818810d84b6f
     files:
-    - from: "/commands/*"
-      to: "commands"
     - from: "plugin.yaml"
     - from: "krew-darwin"
       to: "krew"
+    - from: "/commands/*"
+      to: "commands"
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [darwin]}
   - uri: https://storage.googleapis.com/krew-test/krew.zip
-    sha256: aca61bfe2fd2c188e71331f5929606572ab28037b1669b7141ef94e55400d9f7
+    sha256: 48d853fd7bbe8ea07b56a0ec4dfcbb355723f4ed1a2eeb31bb6b818810d84b6f
     files:
-    - from: "/commands/*"
-      to: "commands"
     - from: "plugin.yaml"
     - from: "krew-linux"
       to: "krew"
+    - from: "/commands/*"
+      to: "commands"
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [linux]}
