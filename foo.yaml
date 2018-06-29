@@ -13,14 +13,6 @@ spec:
     selector:
       matchLabels:
         os: "windows"
-  - head: https://github.com/ahmetb/kubectx/archive/v0.5.0.zip
-    uri: https://github.com/ahmetb/kubectx/archive/v0.5.0.zip
-    sha256: 4c9c28d7270b6ccbc54f0e9ab86b533c614d9652805022dd047a909b55d738e2
-    files:
-    - from: "/*"
-    selector:
-      matchExpressions:
-      - {key: os, operator: In, values: [darwin, linux]}
   version: "v0.5.0"
   intro: Short description of foo!
   description: |

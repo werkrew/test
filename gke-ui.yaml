@@ -13,4 +13,6 @@ spec:
       - {key: os, operator: In, values: [darwin, linux]}
   version: "master"
   intro: Launch GKE web interface
-
+  caveats: |
+    This plugin needs the following programs:
+    * jq

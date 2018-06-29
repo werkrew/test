@@ -13,4 +13,7 @@ spec:
       - {key: os, operator: In, values: [darwin, linux]}
   version: "master"
   intro: Make a call to all clusters in kubeconfig to refresh access tokens
-
+  caveats: |
+    This plugin needs the following programs:
+    * jq
+    * mapfile
