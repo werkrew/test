@@ -4,8 +4,8 @@ metadata:
   name: krew
 spec:
   platforms:
-  - uri: https://storage.googleapis.com/krew-test/krew-2e4e96acf6cc5eb0d5fef51861786dd33fac696b03546ca147d4c433d77078b6.zip
-    sha256: 2e4e96acf6cc5eb0d5fef51861786dd33fac696b03546ca147d4c433d77078b6
+  - uri: https://storage.googleapis.com/krew-test/krew-1e8a7ec6c62536aa8ad1d5e07130c3e6727c127eb6f968f599a00581dbd3939e.zip
+    sha256: 1e8a7ec6c62536aa8ad1d5e07130c3e6727c127eb6f968f599a00581dbd3939e
     files:
     - from: "unix/plugin.yaml"
       to: plugin.yaml
@@ -16,8 +16,8 @@ spec:
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [darwin]}
-  - uri: https://storage.googleapis.com/krew-test/krew-2e4e96acf6cc5eb0d5fef51861786dd33fac696b03546ca147d4c433d77078b6.zip
-    sha256: 2e4e96acf6cc5eb0d5fef51861786dd33fac696b03546ca147d4c433d77078b6
+  - uri: https://storage.googleapis.com/krew-test/krew-1e8a7ec6c62536aa8ad1d5e07130c3e6727c127eb6f968f599a00581dbd3939e.zip
+    sha256: 1e8a7ec6c62536aa8ad1d5e07130c3e6727c127eb6f968f599a00581dbd3939e
     files:
     - from: "unix/plugin.yaml"
       to: plugin.yaml
@@ -28,8 +28,8 @@ spec:
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [linux]}
-  - uri: https://storage.googleapis.com/krew-test/krew-2e4e96acf6cc5eb0d5fef51861786dd33fac696b03546ca147d4c433d77078b6.zip
-    sha256: 2e4e96acf6cc5eb0d5fef51861786dd33fac696b03546ca147d4c433d77078b6
+  - uri: https://storage.googleapis.com/krew-test/krew-1e8a7ec6c62536aa8ad1d5e07130c3e6727c127eb6f968f599a00581dbd3939e.zip
+    sha256: 1e8a7ec6c62536aa8ad1d5e07130c3e6727c127eb6f968f599a00581dbd3939e
     files:
     - from: "windows/plugin.yaml"
       to: plugin.yaml
