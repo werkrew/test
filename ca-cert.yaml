@@ -13,4 +13,9 @@ spec:
       - {key: os, operator: In, values: [darwin, linux]}
   version: "master"
   intro: Print PEM CA certificate of current cluster 
-
+  description: |
+    Pretty print the current cluster certificate.
+    The plugin formats the ca in PEM following RFC1421.
+  caveats: |
+    This plugin needs the following programs:
+    * base64
