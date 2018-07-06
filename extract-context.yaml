@@ -1,0 +1,16 @@
+apiVersion: plugin.krew.app/v1alpha1
+kind: Plugin
+metadata:
+  name: extract-context
+spec:
+  platforms:
+  - head: https://github.com/ahmetb/kubectl-extras/archive/master.zip
+    files:
+    - from: "/extract-context/*"
+      to: "."
+    selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+  version: "master"
+  intro: Extract current-context on kubectl as a kubeconfig yaml
+
